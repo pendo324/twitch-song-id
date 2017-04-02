@@ -1,0 +1,39 @@
+{
+  "name": "twitch-song-id",
+  "version": "0.0.1",
+  "description": "A 99% complete, but entirely useless project to ID songs on live twitch streams",
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 6.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "~6.0.65",
+    "@types/dotenv": "^2.0.20",    
+    "rimraf": "~2.6.1",
+    "tslint": "~4.5.1",
+    "tslint-microsoft-contrib": "~4.0.0",
+    "typescript": "~2.2.1"
+  },
+  "scripts": {
+    "clean": "rimraf build tmp",
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.release.json",
+    "lint": "tslint -t stylish '{src}/**/*.{ts}'",
+    "pretest": "npm run lint"
+  },
+  "author": "Justin <pendo324>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pendo324/twitch-song-id"
+  },
+  "bugs": {
+    "url": "https://github.com/pendo324/twitch-song-id/issues"
+  },
+  "homepage": "https://github.com/pendo324/twitch-song-id/README.md",
+  "dependencies": {
+    "axios": "^0.16.0",
+    "dotenv": "^4.0.0",
+    "tslib": "~1.6.0"
+  }
+}
