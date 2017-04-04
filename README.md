@@ -17,7 +17,7 @@ If anyone checks out this project and can recommend me a web service that I can 
 
 ## Quick start
 
-You're going to need a modern version of Node (6.x) and a few things in your path:
+You're going to need a modern version of Node (at least 6.x) and a few things in your path:
   * ffmpeg
   * fpcalc
   * Streamlink (should really be replaced with the python version)
